@@ -1,0 +1,1391 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/icofont.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        
+        <title>IfcOpenShell - The open source IFC toolkit and geometry engine</title>
+    </head>
+    <body class="home-page">
+        <!--=== Start Header Section ===-->
+        <header class="header-section">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        
+                        <img src="assets/images/logo.png" alt="Logo">
+                        
+                    </a>
+                    <a href="javascript:void(0);" class="mobile-menu">
+                        <div class="mobile-menu-btn">
+                            <i class="icofont-lg icofont-navigation-menu"></i>
+                        </div>
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link active">home<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="downloads.html" class="nav-link">downloads<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/IfcOpenShell/IfcOpenShell/discussions" class="nav-link">forums<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="http://blog.ifcopenshell.org" class="nav-link">blog<span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://blenderbim.org/docs-python" class="nav-link">documentation<span></span></a>
+                            </li>
+                            
+                        </ul>
+                        <div class="menu-right-options ms-auto">
+                            <p>
+                                <strong class="amount-raised" style="margin-right: 5px;">$</strong> / $500 funded
+                                <a href="https://opencollective.com/opensourcebim">
+                                <span class="border-1">
+                                    <span class="progress-bar" id="progress-bar" data-status="0%" aria-label="Progress bar."></span>
+                                </span>
+                                </a>
+                            </p>
+                            <ul class="social-media-links">
+                                
+                                <li>
+                                    <a href="https://twitter.com/aothms" target="_blank" class="btn btn-primary">
+                                        <i class="icofont-twitter"></i>
+                                    </a>
+                                </li>
+                                
+                                <li class="github-icon">
+                                    <a href="https://github.com/ifcopenshell/ifcopenshell" target="_blank" class="">Github Icon</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--=== Start Menu Slide Bar ===-->
+        <aside class="menu-slide-bar">
+            <div class="close-mobile-menu">
+                <div class="mobile-logo">
+                    <a href="index.html" class="mobile-logo">
+                        
+                        <img src="assets/images/logo.png" alt="Logo">
+                        
+                    </a>
+                </div>
+                <a href="javascript:void(0);" class="close-btn">
+                    <i class="icofont-close-line"></i>
+                </a>
+            </div>
+            <nav class="side-mobile-menu">
+                <ul id="mobile-menu-active">
+                    
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active">home<span></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="downloads.html" class="nav-link">downloads<span></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://github.com/IfcOpenShell/IfcOpenShell/discussions" class="nav-link">forums<span></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://blog.ifcopenshell.org" class="nav-link">blog<span></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://blenderbim.org/docs-python" class="nav-link">documentation<span></span></a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </aside>
+        <div class="body-overlay"></div>
+        <!--=== End Menu Slide Bar ===-->
+        <!--
+        // Preserved for posterity from the original website. This joke never gets old.
+
+        Q: What's with the name? Ifc Opens Hell?
+        A: No, you're not reading it correctly. An IfcOpenShell is one of the ways geometry can be described inside an Ifc file. Since the name reflects on the Ifc part, the open source part and the geometry part of the project, we figured we'd pick this as our name. PS: No, we're not called openIfcShell either
+
+        Q: Ok, so how do you make money with this?
+        A: We don't. Are you? How about sharing some of the pie or help out with development or testing!
+        -->
+        <!--=== Start Banner Section ===-->
+        <section class="banner-section bg-color-fff1f2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="side-border wow fadeInUp delay-0-4s"></div>
+                        <div class="banner-content">
+                            <h1 class="wow fadeInUp delay-0-2s"> IfcOpenShell </h1>
+                            <h2 class="up-title wow fadeInUp delay-0-4s"> The open source IFC toolkit <br> and geometry engine </h2>
+                            <p class="wow fadeInUp delay-0-6s"> 
+                                IfcOpenShell helps you develop digital platforms for the built environment. <br>
+                                Read, write, and modify Building Information Models using IFC, <br> 
+                                a diverse digital language from design to construction and beyond.
+                            </p>
+                            <div class="banner-btn">
+                                <a href="downloads.html" class="main-btn wow fadeInUp delay-0-8s">
+                                    <span class="btn-style">
+                                        <img src="assets/images/banner/download-icon.png" /> Download v0.7.0
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp delay-0-4s">
+                        <div class="banner-img">
+                            <img src="assets/images/banner/banner-img-1.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=== End Banner Section ===-->
+        <!--=== Start Services Section ===-->
+        <section class="services-section pt-50 pb-10">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-1">
+                            <div class="inner-content">
+                                <h3>
+                                    A library you can rely on
+                                </h3>
+                                <span class="divider"></span>
+                                <p>
+                                    Developed by a community of hundreds of developers and trusted to deliver many AEC technologies that power our industry.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-1.png" alt="Icon" />
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-2">
+                            <div class="inner-content">
+                                <h3>
+                                    Any technology stack
+                                </h3>
+                                <span class="divider"></span>
+                                <p>
+                                    Build with Windows, Mac, or Linux, in C++ or Python. Deploy headless server tools, or author IFC natively with a rich graphical interface.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-2.png" alt="Icon" style="width: 70%;" />
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-3 text-left">
+                            <div class="inner-content">
+                                <h3>
+                                    All schemas and formats
+                                </h3>
+                                <span class="divider"></span>
+                                <p>
+                                    Support IFC2X3, IFC4, IFC4.3, or load your own at run-time. Read and write IFC-SPF, IFCJSON, IFCXML, and IFCHDF5.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-3.png" alt="Icon" class="left-image" />
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-4">
+                            <div class="inner-content">
+                                <h3>
+                                    Native IFC authoring API
+                                </h3>
+                                <span class="divider"></span>
+                                <p>
+                                    High level API for hundreds of tasks. Perform complex authoring like copying objects, cost calculation, or 4D simulation with one line of code.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-4.png" alt="Icon">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-1">
+                            <div class="inner-content">
+                                <h3>
+                                    Robust geometry
+                                </h3>
+                                <span class="divider"></span>
+                                <p>
+                                    Convert parametric geometry into explicit geometry for any CAD system from booleans to complex sweeps.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-5.png" alt="Icon">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-2">
+                            <div class="inner-content">
+                                <h3>
+                                    2D drawings
+                                </h3>
+                                <span class="divider"></span>
+                                <p>
+                                    Generate and annotate 2D drawings from 3D geometry with ease. Preserve drawing semantics and link model data to and from drawing symbols.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-6.png" alt="Icon">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-3">
+                            <div class="inner-content">
+                                <h3>
+                                    Ecosystem of tools
+                                </h3>
+                                <span class="divider"></span>
+                                <p> 
+                                    Clash detection, model comparison, and conversion to over 10 other formats. Integrate with technologies like IDS, BCF, and bSDD, and more.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-7.png" alt="Icon">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="main-services-item wow fadeInUp delay-0-2s color-4">
+                            <div class="inner-content">
+                                <h3>
+                                    Easy to use
+                                </h3>
+                                <span class="divider"></span>
+                                <p>
+                                    Extensive documentation, user guides, academic courses, and a vibrant user community to help you begin your journey.
+                                </p>
+                            </div>
+                            <img src="assets/images/icon/icon-8.png" alt="Icon">
+                            <div class="desing-1"><img src="assets/images/home-page/desing1.png" alt="Icon" class=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="desing-2  wow fadeInUp delay-0-8s"><img src="assets/images/home-page/desing2.png" alt="Icon" class="line-image"></div>
+            </div>
+        </section>
+        <!--=== End Services Section ===-->
+        <div class="container started-section choose-section wow fadeInUp" >
+            <div class="row">
+                <h3> Let's get started </h3> 
+            </div>
+            <div id="tabs">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="home-page-slider-section">
+                        <div class="design-1"></div>
+                        <div class="design-2"></div>
+                        <div class="tabContent">
+                            <div class="owl-carousel owl-theme " >
+                                <div class="item" >
+<pre>
+<span class="orange-color"># Load and edit a wall name</span>
+import <span class="green-color">ifcopenshell</span>
+
+model = ifcopenshell.<span class="green-color">open</span>('model.ifc')
+walls = model.<span class="green-color">by_type</span>('IfcWall')
+walls[0].Name = 'My wall'
+
+model.<span class="green-color">write</span>('updated-model.ifc')
+</pre>
+                                </div>
+                                <div class="item" >
+<pre>
+<span class="orange-color"># Properties, type, and location of a door</span>
+import <span class="green-color">ifcopenshell.util.element</span> as <span class="green-color">util</span>
+
+door = model.<span class="green-color">by_type</span>("IfcDoor")[0]
+
+prop_sets = util.<span class="green-color">get_psets</span>(door)
+door_type = util.<span class="green-color">get_type</span>(door)
+location = util.<span class="green-color">get_container</span>(door)
+</pre>
+                                </div>
+                                <div class="item" >
+<pre>
+<span class="orange-color"># Create a wall on the site</span>
+from <span class="green-color">ifcopenshell.api</span> import <span class="green-color">run</span>
+
+site = run("<span class="green-color">root.create_entity</span>", model,
+    ifc_class="IfcSite")
+wall = run("<span class="green-color">root.create_entity</span>", model,
+    ifc_class="IfcWall")
+
+run("<span class="green-color">spatial.assign_container</span>", model,
+    relating_structure=site, product=wall)
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContent">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item" >
+<pre>
+// C++ example 1
+</pre>
+                                </div>
+                                <div class="item" >
+<pre>
+// C++ example 2
+</pre>
+                                </div>
+                                <div class="item" >
+<pre>
+// C++ example 3
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabContent">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item" >
+<pre>
+<span class="orange-color"># Convert a model to different formats</span>
+$ <span class="green-color">IfcConvert</span> model.ifc model.glb
+
+<span class="orange-color"># Multicore processing</span>
+$ <span class="green-color">IfcConvert</span> model.ifc model.dae
+
+<span class="orange-color"># Filters and operations</span>
+$ <span class="green-color">IfcConvert</span> --model-offset "10000;10000;0" \
+    model.ifc model.dae
+</pre>
+                                </div>
+                                <div class="item" >
+<pre>
+<span class="orange-color"># Check BIM requirements</span>
+$ <span class="green-color">ifctester</span> specs.ids model.ifc
+
+<span class="orange-color"># Produce reports</span>
+$ <span class="green-color">ifctester</span> -r Html -o out.html test.ids bldg.ifc
+</pre>
+                                </div>
+                                <div class="item" >
+<pre>
+<span class="orange-color"># Compare models</span>
+$ <span class="green-color">ifcdiff</span> old.ifc new.ifc
+
+<span class="orange-color"># Schedule objects in a spreadsheet</span>
+$ <span class="green-color">ifccsv</span> -i input.ifc -c out.csv -q ".IfcWall"
+
+<span class="orange-color"># Clash detection</span>
+$ <span class="green-color">ifcclash</span> -o results.json clashsets.json
+</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                      <div class="tcenter wow fadeInUp delay-0-2s ">
+                        <h4> Choose your hammer </h4>
+                            <ul class="choose-list">
+                                <li>
+                                    <a class="tab whiteborder">
+                                        I know Python
+                                    </a>
+                                </li>
+                                <li>
+                                     <a class="tab">
+                                        I know C++
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="tab">
+                                        I'm a CLI whiz
+                                    </a>
+                                </li>
+                            </ul>
+                            <p>
+                                Learn more in our <a href="https://blenderbim.org/docs-python/"><span>documentation</span>.</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            </div> 
+            </div>
+        </div>
+        <!-- Carousel Section -->
+        <div class="container started-section wow fadeInUp logo-section" >
+            <div class="row">
+                <h3 class="wow fadeInUp delay-0-2s"> Made possible by you </h3> 
+            </div>
+            <div class="row">
+                <div class="offset-sm-1 col-sm-10 text-center">
+                    <div class="partners-logo tier1">
+                        
+                        <div>
+                            <a href="https://opencollective.com/mats-noren">
+                            <img src="https://images.opencollective.com/mats-noren/avatar/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Mats Norén
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://opencollective.com/guest-6daac764">
+                            <img src="https://images.opencollective.com/guest-6daac764/avatar/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Trenton Gauthier, AIA
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://opencollective.com/spectar1">
+                            <img src="https://images.opencollective.com/spectar1/3ca97c2/logo/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Spectar
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://opencollective.com/lukas-alberts">
+                            <img src="https://images.opencollective.com/lukas-alberts/avatar/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Lukas Alberts
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://opencollective.com/paul-tice">
+                            <img src="https://images.opencollective.com/paul-tice/avatar/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Paul Tice
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://opencollective.com/tietoa-finland-oy">
+                            <img src="https://images.opencollective.com/tietoa-finland-oy/632bc4b/logo/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Tietoa Finland Oy
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/Moult">
+                            <img src="https://avatars.githubusercontent.com/u/88302?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Moult
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/aothms">
+                            <img src="https://avatars.githubusercontent.com/u/1096535?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            aothms
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="partners-logo tier2">
+                        
+                        <div>
+                            <a href="https://opencollective.com/matthew-fuller">
+                            <img src="https://images.opencollective.com/matthew-fuller/avatar/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Matthew Fuller
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://opencollective.com/dion-moult">
+                            <img src="https://images.opencollective.com/dion-moult/e6dd5ba/avatar/100.png" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Dion Moult
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/Stinkfist0">
+                            <img src="https://avatars.githubusercontent.com/u/227876?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Stinkfist0
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/berndhahnebach">
+                            <img src="https://avatars.githubusercontent.com/u/6129869?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            berndhahnebach
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/johltn">
+                            <img src="https://avatars.githubusercontent.com/u/48138129?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            johltn
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/Gorgious56">
+                            <img src="https://avatars.githubusercontent.com/u/25156105?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Gorgious56
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/vulevukusej">
+                            <img src="https://avatars.githubusercontent.com/u/83825269?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            vulevukusej
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/Jesusbill">
+                            <img src="https://avatars.githubusercontent.com/u/6861582?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            Jesusbill
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/myoualid">
+                            <img src="https://avatars.githubusercontent.com/u/79010126?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            myoualid
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a href="https://github.com/atomczak">
+                            <img src="https://avatars.githubusercontent.com/u/22922395?v=4" alt="Partner" class="wow fadeInUp delay-0-2s" />
+                            <br />
+                            atomczak
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="partners-logo tier3">
+                        
+                        <a href="https://opencollective.com/daniel60" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/daniel60/avatar/100.png" title="Daniel" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-08b4953b" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-08b4953b/avatar/100.png" title="Alex" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-1f5f7767" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-1f5f7767/avatar/100.png" title="Leon ten Brinke" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-d0bbc038" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-d0bbc038/avatar/100.png" title="Andrew Bailey" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-451bc684" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-451bc684/avatar/100.png" title="Helga Tauscher" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/brendon-reid" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/brendon-reid/2ec9c08/avatar/100.png" title="Brendon Reid" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/aethereng" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/aethereng/33ed640/logo/100.png" title="Aether Engineering" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-f03fdfe8" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-f03fdfe8/avatar/100.png" title="Tonny Espeset" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-987b39cd" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-987b39cd/avatar/100.png" title="bitenergie" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/sven-amiet" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/sven-amiet/5d5a30d/avatar/100.png" title="Sven" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/bclmnt" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/bclmnt/avatar/100.png" title="bclmnt" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-a2a48660" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-a2a48660/avatar/100.png" title="tlang" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/cvillagrasa" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/cvillagrasa/avatar/100.png" title="cvillagrasa" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/vukas-pajic" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/vukas-pajic/c035488/avatar/100.png" title="Vukas Pajic" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-a3a47df1" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-a3a47df1/avatar/100.png" title="Ive" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-c43ea034" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-c43ea034/avatar/100.png" title="Stefan Stappen" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/plumpmath" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/plumpmath/avatar/100.png" title="PlumpMath" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-ce4524c2" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-ce4524c2/avatar/100.png" title="casiovadal" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/ari-pikkarainen" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/ari-pikkarainen/avatar/100.png" title="Ari Pikkarainen" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-cab6f638" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-cab6f638/avatar/100.png" title="Hauk-Morten" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-d7d4d84d" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-d7d4d84d/avatar/100.png" title="Jonathan Salas" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/kristoffer-hunnestad-andersen" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/kristoffer-hunnestad-andersen/avatar/100.png" title="Kristoffer Hunnestad Andersen" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/incognito-6061ab77" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/incognito-6061ab77/avatar/100.png" title="Incognito" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/bbrangeo" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/bbrangeo/843c3cf/avatar/100.png" title="Boris Brangeon" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/talgat-akhonov" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/talgat-akhonov/avatar/100.png" title="Talgat Akhonov" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-36dd4847" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-36dd4847/avatar/100.png" title="Alic Cellam" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/guest-fab0c81f" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/guest-fab0c81f/avatar/100.png" title="optional :)" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/michal-rokicinski" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/michal-rokicinski/avatar/100.png" title="Michał Rokiciński" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/marin-ljuban" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/marin-ljuban/avatar/100.png" title="Marin Ljuban" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/gomage" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/gomage/e0a6e78/logo/100.png" title="GoMage" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/thomas-krijnen" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/thomas-krijnen/074f916/avatar/100.png" title="Thomas Krijnen" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://opencollective.com/opensource" style="margin-right: 10px;">
+                            <img src="https://images.opencollective.com/opensource/426badd/logo/100.png" title="Open Source Collective" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/qwiglydee" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/285128?v=4" title="qwiglydee" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Krande" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/9642232?v=4" title="Krande" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/cvillagrasa" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/57069798?v=4" title="cvillagrasa" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/s-leger" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/7442572?v=4" title="s-leger" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/htlcnn" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/931924?v=4" title="htlcnn" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/LaurensJN" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/23737460?v=4" title="LaurensJN" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/plaes" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/91895?v=4" title="plaes" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/CyrilWaechter" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/9622862?v=4" title="CyrilWaechter" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/rbertucat" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/963014?v=4" title="rbertucat" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/1744197233" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/15687827?v=4" title="1744197233" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/maxfb87" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/79401028?v=4" title="maxfb87" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/TestPrab" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/59395410?v=4" title="TestPrab" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/thorade" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/314571?v=4" title="thorade" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/theoryshaw" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/507113?v=4" title="theoryshaw" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/andersgb" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1473004?v=4" title="andersgb" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/brunopostle" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1747315?v=4" title="brunopostle" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/prudhomm" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/151693?v=4" title="prudhomm" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/vinnividivicci" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/591242?v=4" title="vinnividivicci" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/christt105" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/36189169?v=4" title="christt105" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ahladik" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/75784288?v=4" title="ahladik" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/tpaviot" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/660130?v=4" title="tpaviot" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/elmopl" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/285350?v=4" title="elmopl" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/FreakTheMighty" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/247092?v=4" title="FreakTheMighty" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Amoki" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1349751?v=4" title="Amoki" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/HassanEmam" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/6377734?v=4" title="HassanEmam" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/RickBrice" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/37087370?v=4" title="RickBrice" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/civilx64" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/26513472?v=4" title="civilx64" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/carmenfan" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/11945337?v=4" title="carmenfan" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/dushyant-basson" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/39452934?v=4" title="dushyant-basson" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/sanderboer" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/628480?v=4" title="sanderboer" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/CrazyTales" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/11017324?v=4" title="CrazyTales" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/fbpyr" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/73931454?v=4" title="fbpyr" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/bbrangeo" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/769760?v=4" title="bbrangeo" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/otsoa" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/99903?v=4" title="otsoa" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/luzpaz" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/4140247?v=4" title="luzpaz" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/aschvalberg" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/103732817?v=4" title="aschvalberg" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/atibaut" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/2762514?v=4" title="atibaut" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/hypirion" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/504876?v=4" title="hypirion" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Martin15135215" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/110968398?v=4" title="Martin15135215" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Alhetus" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/10682799?v=4" title="Alhetus" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/globalcitizen" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/505366?v=4" title="globalcitizen" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ihabelaghoury" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/46285271?v=4" title="ihabelaghoury" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Andrej730" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/9417531?v=4" title="Andrej730" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/gisspace" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/6889060?v=4" title="gisspace" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/apps/dependabot" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/in/29110?v=4" title="dependabot[bot]" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/iras" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/773028?v=4" title="iras" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/chunchk" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/36185113?v=4" title="chunchk" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Henri-J-Norden" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/55378880?v=4" title="Henri-J-Norden" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/derbosper" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/33131171?v=4" title="derbosper" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Xsoiou" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/32762440?v=4" title="Xsoiou" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/yorikvanhavre" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1136856?v=4" title="yorikvanhavre" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/tibicen" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/5797670?v=4" title="tibicen" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/stefkeB" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1118880?v=4" title="stefkeB" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/AdriScho" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/22259790?v=4" title="AdriScho" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/AlaaB2020" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/56257353?v=4" title="AlaaB2020" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/birgerbr" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/11897453?v=4" title="birgerbr" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/brunoperdigao" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/57102715?v=4" title="brunoperdigao" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/dirkolbrich" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/3765119?v=4" title="dirkolbrich" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/EstebanDugueperoux2" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/43169544?v=4" title="EstebanDugueperoux2" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/femesq" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1899668?v=4" title="femesq" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/jobermayr" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/588670?v=4" title="jobermayr" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/m-clare" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/6874646?v=4" title="m-clare" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/sztectus" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/19601475?v=4" title="sztectus" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Geometrein" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/65066173?v=4" title="Geometrein" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/lamorlette-cintoo" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/45365589?v=4" title="lamorlette-cintoo" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/YouYue123" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/8738486?v=4" title="YouYue123" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/carlopav" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/47068848?v=4" title="carlopav" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/garylzimmer" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/10817594?v=4" title="garylzimmer" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/hlg" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/356986?v=4" title="hlg" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/jakob-beetz" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/2325007?v=4" title="jakob-beetz" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/johanrd" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/4601554?v=4" title="johanrd" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/paullee0" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/40677073?v=4" title="paullee0" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ssg3d" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/64012165?v=4" title="ssg3d" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/stephassoria" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/3169616?v=4" title="stephassoria" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/stgatilov" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/13484213?v=4" title="stgatilov" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/tymokvo" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/12144028?v=4" title="tymokvo" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/youaresoomean" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/7073399?v=4" title="youaresoomean" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ninichki" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1086380?v=4" title="ninichki" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/AToradaIBIM" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/98612825?v=4" title="AToradaIBIM" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/FragColor" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/4006495?v=4" title="FragColor" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/benjamindahl" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/2698024?v=4" title="benjamindahl" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ideasman42" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1869379?v=4" title="ideasman42" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/carlesRT" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/8694030?v=4" title="carlesRT" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/c4rlosdias" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/57261862?v=4" title="c4rlosdias" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/nref-dan" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/3584566?v=4" title="nref-dan" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/dleverton" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/42894?v=4" title="dleverton" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Demetrio92" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/22682408?v=4" title="Demetrio92" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/emadpres" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/2047884?v=4" title="emadpres" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/haraldg" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1666703?v=4" title="haraldg" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/HeySora" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/17962248?v=4" title="HeySora" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/hawkaa" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/3704520?v=4" title="hawkaa" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/jf---" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/620988?v=4" title="jf---" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ju1m" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/21160136?v=4" title="ju1m" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/kaiaurelienzhu" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/34644460?v=4" title="kaiaurelienzhu" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/larsmoa" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/6741854?v=4" title="larsmoa" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/lcpt" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/12873038?v=4" title="lcpt" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/LukeB42" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/942331?v=4" title="LukeB42" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ManuelFDS" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/14068505?v=4" title="ManuelFDS" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/MArtus-Uni" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/67042782?v=4" title="MArtus-Uni" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/robbederks" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/894159?v=4" title="robbederks" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/robertguetzkow" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/25986807?v=4" title="robertguetzkow" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/RobinVanTol" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/38659478?v=4" title="RobinVanTol" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Ttofuuu" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/49158715?v=4" title="Ttofuuu" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/SOCfperrier" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/34125283?v=4" title="SOCfperrier" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/Victor-Haefner" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/9283739?v=4" title="Victor-Haefner" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/YoniChechik" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/16686924?v=4" title="YoniChechik" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/aahoo" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/6784228?v=4" title="aahoo" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/arzezniczak" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/20474251?v=4" title="arzezniczak" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/bimworld" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/60388452?v=4" title="bimworld" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/TZwielehner" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/9949323?v=4" title="TZwielehner" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/didi-ux" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/61912702?v=4" title="didi-ux" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/ecke101" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/249736?v=4" title="ecke101" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/e3dEF" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/41104642?v=4" title="e3dEF" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/fluider" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/10208815?v=4" title="fluider" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/gabrielpioto" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/76054805?v=4" title="gabrielpioto" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/iNEHCi" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/19600107?v=4" title="iNEHCi" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/a2sng" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/62335338?v=4" title="a2sng" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/molitoris" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/1951230?v=4" title="molitoris" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/theliam" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/6906498?v=4" title="theliam" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                        <a href="https://github.com/yilativs" style="margin-right: 10px;">
+                            <img src="https://avatars.githubusercontent.com/u/2856078?v=4" title="yilativs" class="wow fadeInUp delay-0-2s" />
+                            
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="offset-sm-2 col-sm-8 text-center  wow fadeInUp delay-0-2s">
+                    <br><br>
+                    <p>
+                        We've been building IFC technology for over a decade and want to share everything we know for a better built environment.
+                    </p>
+                    <p>
+                        Free for all of us, forever.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--=== Start Footer Section ===--> 
+        <div class="footer-section copy-wrap">
+            <div class="container">
+                <div>
+                    <div class="back-to-top text-center">
+                        <i class="icofont-simple-up"></i>
+                    </div>
+                    <div class="text-center">
+                        <img src="assets/images/partner/partner-11.png" alt="Partner" class="" />
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8">
+                            
+                            <p class="footer-left-text"><a href="https://ifcopenshell.org"><span> IfcOpenShell </span></a> is a free software project by amazing volunteers. You can <a href="https://github.com/ifcopenshell/ifcopenshell/"><span> be one too!  </span></a></p>
+                            
+                        </div>
+                        <div class="col-lg-4 text-right">
+                            <img src="assets/images/footer-logo.png" alt="Footer Logo" class="footer-logo" />
+                            <div class="pull-right">
+                                <h5><a href="https://ifcopenshell.org">IfcOpenShell</a></h5>
+                                <p>
+                                    The open source IFC toolkit <br> and geometry engine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--=== End Footer Section ===-->
+        <!--=== JS Link ===-->
+        <script src="assets/js/jquery.min.js"></script> 
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/mobile-menu.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/main.js"></script>
+        <!-- jquery end -->
+    </body>
+</html>
